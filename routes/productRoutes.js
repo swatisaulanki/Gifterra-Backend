@@ -10,6 +10,6 @@ const {
 router.get('/', getAllProductsController);
 router.post('/', createProductController);
 router.delete('/:id', deleteProductController);
-router.put('/:id', updateProductController); // ✅ Update product route
+router.put('/:id', updateProductController); 
 
 module.exports = router;

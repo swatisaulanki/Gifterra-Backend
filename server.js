@@ -45,6 +45,11 @@ const app = express();
 
 app.use(cors());
 app.use(express.json());
+
+app.get("/", (req, res) => {
+    res.send("🎁 Welcome to the Gifterra Backend API")
+})
+
 app.use('/uploads', express.static('uploads'));
 
 app.use('/api/products', require('./routes/productRoutes'));
